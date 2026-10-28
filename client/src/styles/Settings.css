@@ -1,0 +1,215 @@
+.settings-page {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.settings-heading {
+  margin-bottom: 30px;
+}
+
+.settings-heading h1 {
+  margin: 10px 0;
+  font-size: 29px;
+  color: #173047;
+  letter-spacing: -0.8px;
+}
+
+.settings-heading p {
+  color: #8293a2;
+  font-size: 14px;
+  margin: 0;
+}
+
+.settings-card {
+  background: #ffffff;
+  border: 1px solid #e8edf2;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.settings-card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 25px 28px;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.settings-card-icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #e9f8f4;
+  color: #159f86;
+}
+
+.settings-card-header h2 {
+  margin: 0 0 6px;
+  font-size: 17px;
+  color: #173047;
+}
+
+.settings-card-header p {
+  margin: 0;
+  font-size: 12px;
+  color: #91a0ad;
+}
+
+.settings-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  padding: 28px;
+}
+
+.settings-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  min-width: 0;
+}
+
+.settings-info-item > span {
+  color: #8a9cab;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.settings-info-item strong {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #173047;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.settings-info-item strong svg {
+  color: #159f86;
+  flex-shrink: 0;
+}
+
+.settings-form-content {
+  padding: 28px;
+}
+
+.settings-field-label {
+  display: block;
+  color: #40576a;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.settings-field-description {
+  max-width: 550px;
+  color: #8a9cab;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+
+.settings-threshold-input {
+  display: flex;
+  align-items: center;
+  width: 230px;
+  border: 1px solid #dce5eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.settings-threshold-input:focus-within {
+  border-color: #159f86;
+}
+
+.settings-threshold-input input {
+  width: 100%;
+  min-width: 0;
+  padding: 13px 15px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #173047;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.settings-threshold-input span {
+  padding: 0 15px;
+  color: #8a9cab;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.settings-info-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 650px;
+  margin-top: 24px;
+  padding: 17px;
+  border: 1px solid #f8e6b9;
+  border-radius: 10px;
+  background: #fffbef;
+}
+
+.settings-info-banner svg {
+  flex-shrink: 0;
+  color: #d79524;
+}
+
+.settings-info-banner p {
+  margin: 0;
+  color: #8b6c35;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.settings-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 28px;
+  border-top: 1px solid #edf1f5;
+}
+
+.settings-card-footer button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.settings-success {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 17px;
+  margin-bottom: 20px;
+  border: 1px solid #a7f3d0;
+  border-radius: 9px;
+  background: #ecfdf5;
+  color: #047857;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .settings-info-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .settings-card-header,
+  .settings-info-grid,
+  .settings-form-content,
+  .settings-card-footer {
+    padding: 20px;
+  }
+
+  .settings-threshold-input {
+    width: 100%;
+    max-width: 260px;
+  }
+}
